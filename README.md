@@ -1,2 +1,2 @@
 # RandomZ
-A simple random generator for PHP
+A simple random generator written in PHP
