@@ -16,7 +16,7 @@ class RandomZ {
 	 * Restores characters used for the generation
 	 * @param bool $upperLetters Restore upperletters 
 	 * @param bool $lowerLetters Restore lowerletter
-	 * @param bool $numbers 	 Restore numbers
+	 * @param bool $numbers      Restore numbers
 	 * @param bool $characters   Restore characters
 	 */
 	public function Reset($upperLetters = true, $lowerLetters = true, $numbers = true, $characters = true) {
@@ -28,8 +28,8 @@ class RandomZ {
 
 	/**
      * Generates random strings with a defined length and stores it in an array
-     * @param int $length 		 The length of a value to generate
-     * @param int $amount 		 The amount of values to generate
+     * @param int $length 	 The length of a value to generate
+     * @param int $amount 	 The amount of values to generate
      * @param bool $upperLetters Should the values consist of upperletters
      * @param bool $lowerLetters Should the values consist of lowerletters
      * @param bool $numbers 	 Should the values consist of numbers
@@ -67,7 +67,7 @@ class RandomZ {
      * Generates strings with an individual pattern and stores it in an array
      *
      * @param string $pattern The pattern of which a random value consists: A = Upperletter, a = Lowerletter, n = number, c = character
-     * @param int $amount	  The amount of values to generate
+     * @param int $amount     The amount of values to generate
      */
 	public function GenerateRandByPattern($pattern, $amount) {
 		// A = Upperletter, a = Lowerletter, n = number, c = character
