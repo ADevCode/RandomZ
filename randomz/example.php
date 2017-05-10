@@ -10,19 +10,19 @@ for($i = 0; $i < 3; $i++)
 $code = $generator->GenerateRand(5, 1)[0]; // Generate 1x5 with all characters
 echo "$code<br>"; // will print for example "$aB2#"
 
-$generator->UpperLetters = "ABC"; // The generator uses only "ABC" as upperletters
-$code = $generator->GenerateRand(5, 1, true, false, false, false)[0]; // generate 1x5 consisting of only upperletters
+$generator->UpperCase = "ABC"; // The generator uses only "ABC" as upper-case letters
+$code = $generator->GenerateRand(5, 1, true, false, false, false)[0]; // generate 1x5 consisting of only upper-case letters
 echo "$code<br>"; // will print for example "BCBAA";
 
-$generator->Reset(); // Restores all characters used for generation (Upperletters are going to be restored to default value instead of "ABC")
-$code = $generator->GenerateRand(5, 1, true, true, false, false)[0]; // generate 1x5 consisting of upper- & lowerletters
+$generator->Reset(); // Restores all characters used for generation (upper-case letters are going to be restored to default value instead of "ABC")
+$code = $generator->GenerateRand(5, 1, true, true, false, false)[0]; // generate 1x5 consisting of upper-case & lower-case letters
 echo "$code<br>"; // will print for example "KnmAO";
 
 /* Generate random values by pattern
-   A = Upperletter
-   a = Lowerletter
-   c = Special Character
-   n = Number
+   A = upper-case letter
+   a = lower-case letter
+   c = special Character
+   n = number
  */
 $code = $generator->GenerateRandByPattern("AaA anccn", 5);
 for($i = 0; $i < 5; $i++)
